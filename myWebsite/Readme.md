@@ -1,0 +1,3 @@
+- [x] push to github
+- [x] update mywebsite
+- [x] another git setup
