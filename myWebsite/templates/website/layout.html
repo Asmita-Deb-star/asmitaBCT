@@ -9,14 +9,29 @@
     <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="{% url 'newApp:home' %}">Home</a></li>
-            <li><a href="{% url 'newApp:about' %}">About</a></li>
-            <li><a href="{% url 'newApp:contact' %}">Contact</a></li>
-        </ul>
-    </nav>
-    {% block content %}{% endblock %}
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="{% url 'home' %}">DjangoFlow</a>
+            <nav class="main-nav">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'contact' %}">Contact</a>
+                <a href="{% url 'newApp:home' %}">Products</a>
+            </nav>
+        </div>
+    </header>
+    <main class="page-shell">
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Built with Django • Modern UI for your website</p>
+            <p>&copy; 2026 DjangoFlow</p>
+        </div>
+    </footer>
     
 </body>
 </html>

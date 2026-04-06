@@ -3,6 +3,41 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <h1>Welcome to Django Website</h1>
-    <p>This is a simple Django website.</p>
+    <section class="hero-panel hero-landing">
+        <div class="hero-copy">
+            <p class="eyebrow">Professional Django UI</p>
+            <h1>Create a modern website with polished style.</h1>
+            <p>Experience a refined design system with clean spacing, elegant gradients, and user-friendly page structure across your Django project.</p>
+        </div>
+        <div class="hero-actions">
+            <a class="button primary" href="{% url 'newApp:about' %}">Explore About</a>
+            <a class="button secondary" href="{% url 'newApp:contact' %}">Get in Touch</a>
+        </div>
+    </section>
+
+    <section class="feature-grid">
+        <article class="feature-card">
+            <h2>Refined interface</h2>
+            <p>Minimal layouts and tasteful accents make content feel premium and easy to read.</p>
+        </article>
+        <article class="feature-card">
+            <h2>Fast responsiveness</h2>
+            <p>Built to look sharp on desktop, tablet, and mobile with a seamless adaptive experience.</p>
+        </article>
+        <article class="feature-card">
+            <h2>Built with Django</h2>
+            <p>The design works with your existing Django templates and keeps the project lightweight.</p>
+        </article>
+    </section>
+
+    <section class="highlight-grid">
+        <div class="highlight-card">
+            <h2>Design that converts</h2>
+            <p>Use modern visual hierarchy and clear CTAs to help visitors take action immediately.</p>
+        </div>
+        <div class="highlight-card">
+            <h2>Better content flow</h2>
+            <p>Structured sections guide users logically through your services, about, and contact pages.</p>
+        </div>
+    </section>
 {% endblock %}

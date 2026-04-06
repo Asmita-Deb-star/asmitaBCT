@@ -5,6 +5,51 @@ Contact
 {% endblock %}
 
 {% block content %}
-<h1>Contact Page</h1>
-<p>This is the contact page.</p>
+	<section class="page-hero contact-hero">
+		<div class="hero-copy">
+			<p class="eyebrow">Get in touch</p>
+			<h1>Let’s bring your website to life</h1>
+			<p>Ask a question, request a design update, or get support for your Django site.</p>
+		</div>
+	</section>
+
+	<section class="contact-grid contact-main-grid">
+		<div class="contact-card">
+			<h2>Email Support</h2>
+			<p>support@djangoflow.example</p>
+			<p>Responsive answers within one business day.</p>
+		</div>
+		<div class="contact-card">
+			<h2>Office Hours</h2>
+			<p>Mon - Fri: 9AM to 6PM</p>
+			<p>Available for consultation and feedback.</p>
+		</div>
+		<div class="contact-card">
+			<h2>Quick actions</h2>
+			<ul>
+				<li>Request help</li>
+				<li>Report a bug</li>
+				<li>Share your ideas</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="form-card">
+		<h2>Send a message</h2>
+		<form action="#" method="post" class="contact-form">
+			<div class="form-row">
+				<label for="name">Your name</label>
+				<input id="name" type="text" placeholder="Jane Doe">
+			</div>
+			<div class="form-row">
+				<label for="email">Email address</label>
+				<input id="email" type="email" placeholder="jane@example.com">
+			</div>
+			<div class="form-row">
+				<label for="message">Message</label>
+				<textarea id="message" rows="5" placeholder="Tell us what you'd like help with"></textarea>
+			</div>
+			<button type="submit" class="button primary">Send message</button>
+		</form>
+	</section>
 {% endblock %}
